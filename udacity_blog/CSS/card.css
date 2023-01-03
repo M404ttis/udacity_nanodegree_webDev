@@ -4,7 +4,7 @@
     grid-template-columns: 50% 50%;
     grid-auto-rows: auto;
     grid-gap: var(--grid-gap-card-wrapper);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 

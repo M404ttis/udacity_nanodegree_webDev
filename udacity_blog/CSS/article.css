@@ -16,11 +16,14 @@ h1 {
     padding-right: 0.5rem;
 }
 
-h2 {
+h2,
+h3 {
     padding: 0 1rem 0;
 }
 
-span {
+span,
+p,
+blockquote {
     color: white;
     padding: 0 1rem 0;
 }
@@ -29,5 +32,5 @@ article {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
     border: 2px solid var(--main-border-color);
-    overflow: hidden;
+    overflow: scroll;
 }
