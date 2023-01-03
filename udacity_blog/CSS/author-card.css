@@ -1,0 +1,41 @@
+.author-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.author-upper-half{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+
+.author-card-avatar {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border: solid 2px var(--main-border-color);
+    border-radius: 50%;
+}
+
+
+.author-card-container li {
+    list-style: none;
+}
+
+
+.author-card-container ul {
+    padding: 0px;
+}
+
+
+.author-upper-half ul:nth-child(odd) {
+    color: white;
+}
+
+
+.author-bio {
+    font-family:Arial, Helvetica, sans-serif;
+}

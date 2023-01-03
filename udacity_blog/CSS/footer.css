@@ -7,6 +7,7 @@ footer{
     overflow: hidden;
 }
 
+
 footer a {
     display: flex;
     flex-flow: column wrap;
