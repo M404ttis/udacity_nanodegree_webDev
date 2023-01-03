@@ -1,5 +1,3 @@
-@import url(blog.css);
-
 body {
     background-color: var(--main-background-color);
     display: grid;

@@ -1,0 +1,28 @@
+.article-card-wrapper {
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    grid-gap: var(--grid-gap-card-wrapper);
+    overflow: hidden;
+}
+
+
+.article-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40%;
+    min-height: 15vh;
+    border: 1px solid var(--main-border-color);
+    margin: 0.25rem;
+    padding: 0.5rem;
+}
+
+.article-card a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--link-text-color);
+}
