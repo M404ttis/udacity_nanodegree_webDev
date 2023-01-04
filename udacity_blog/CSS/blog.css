@@ -1,7 +1,13 @@
+@import url(variables.css);
+@import url(article.css);
+@import url(card.css);
+@import url(footer.css);
+@import url(author-card.css);
+
 body {
     background-color: var(--main-background-color);
     display: grid;
-    grid-auto-rows: minmax(10vh, auto);
+    grid-auto-rows: 15vh 10vh 45vh 10vh;
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
     grid-template-areas: 
@@ -43,12 +49,11 @@ h3 {
 nav {
     grid-area: nav;
     display: flex;
-    flex: 1 1 auto;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
     padding: 0.5rem;
-    overflow: scroll;
+    overflow: hide;
 }
 
 a {
@@ -58,7 +63,6 @@ a {
 svg{
     fill: var(--main-text-color);
 }
-
 
 
 /* Mobile is default, desktop is special case */
