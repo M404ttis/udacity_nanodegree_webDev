@@ -1,8 +1,20 @@
 # DOM manipulation
 
+# Concepts
++ Event Loop has 3 parts: Call STACK, WebAPI's/Browser, Event QUEUE
++ Call Stack: when functions are called, they are added on top of the call stack, then synchronously invoked
++ eventListeners are NOT synchronous and "wait" in the Browser until current synchronous code is finished ("run-to-completion")
++ asynchronous code runs outside the Event Loop and sends event when done
++ once the asynchronus code is called, it waits in the QUEUE until the Call Stack is empty and then is passed to therein
++ a function invoked by an event starts in the BROWSER, on invokation jumps in the QUEUE and waits for synchronous code to run complete, and then is placed on Call STACK
+
 # Performance
 + performance.now() ->start measunring from page load on; 
 + document.createDocumentFragment() to avoid triggering reflow and repaint
+    - reflow is the process of recalculating the dimensions and positions of page elements (slow)
+    - repaint draws the pixel to the screen (faster)
++ hide - several changes - show, avoids repaints
++ setTimeout(function myResourceHeavyBlockyFunction (){}, 0); -> is given to Browser after 0 milliseconds and from there enters QUEUE and then STACK, thus can be broken up and let the STACK a chance to handle user interaction/events
 
 # Browser Events
 + .removeEventlistener();
