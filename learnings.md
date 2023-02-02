@@ -1,5 +1,10 @@
 # DOM manipulation
 
+# Browser Console interaction
++ click on element and refer to it as $0 (or $1, $2, $3 for previos ones)
+
+
+
 # Concepts
 + Event Loop has 3 parts: Call STACK, WebAPI's/Browser, Event QUEUE
 + Call Stack: when functions are called, they are added on top of the call stack, then synchronously invoked
@@ -11,6 +16,7 @@
 # Performance
 + performance.now() ->start measunring from page load on; 
 + document.createDocumentFragment() to avoid triggering reflow and repaint
+    - append new elements to fragment and only in the end, once, append fragment as child
     - reflow is the process of recalculating the dimensions and positions of page elements (slow)
     - repaint draws the pixel to the screen (faster)
 + hide - several changes - show, avoids repaints
